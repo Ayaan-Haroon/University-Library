@@ -8,6 +8,20 @@
       "when": 1771249562212,
       "tag": "0000_demonic_loki",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1771429755425,
+      "tag": "0001_lyrical_nextwave",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1771512949732,
+      "tag": "0002_thin_saracen",
+      "breakpoints": true
     }
   ]
 }

@@ -1,23 +1,24 @@
-import BookList from '@/components/ui/BookList';
 import { Button } from '@/components/ui/button';
-import { sampleBooks } from '@/constants';
 import { signOut } from '@/auth';
 import React from 'react';
 
 const Page = () => {
   return(
     <>
-    <form action={async () => {
-      "use server";
+      <form action={async () => {
+        "use server";
 
-      await signOut();
-    }}
-    className = "mb-10"
-    >
-      <Button>Logout</Button>
-    </form>
+        await signOut();
+      }}
+      className = "mb-10"
+      >
+        <Button>Logout</Button>
+      </form>
 
-    <BookList title='Borrowed Books' books={sampleBooks} />
+      <section>
+        <h2 className='font-bebas-neue text-4xl text-light-100'>Borrowed Books</h2>
+        <ul className='book-list' />
+      </section>
     </>
   )
 }
